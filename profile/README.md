@@ -95,8 +95,9 @@ Heavy AI workloads (pose estimation, hold detection, ghost path generation) are 
 
 | Repository | Description |
 |---|---|
-| [Ascension](../Ascension) | Monorepo — mobile app, API, AI workers |
-| [docs](../docs) | Architecture, API spec, database schema, deployment guides |
+| [Ascension](../Ascension) | **Main Monorepo** — Core ecosystem including Flutter mobile app, Rust API, and Python AI workers. |
+| [benchmark](../benchmark) | **Performance Suite** — Technical benchmarks and stress tests for the mobile and backend stack. |
+| [.github](../.github) | **Organization Profile** — Global GitHub profile configuration. |
 
 ---
 
