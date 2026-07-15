@@ -5,7 +5,7 @@
 **AI-powered climbing coach — objective technique analysis, personalized feedback**
 
 [![Flutter](https://img.shields.io/badge/Flutter-Dart-02569B?logo=flutter)](https://flutter.dev)
-[![Rust](https://img.shields.io/badge/Backend-Rust%20%2F%20Axum-DEA584?logo=rust)](https://www.rust-lang.org)
+[![Go](https://img.shields.io/badge/Backend-Go%20%2F%20Gin-00ADD8?logo=go)](https://go.dev)
 [![Python](https://img.shields.io/badge/AI%20Workers-Python%20%2F%20MediaPipe-3776AB?logo=python)](https://python.org)
 [![PostgreSQL](https://img.shields.io/badge/Database-PostgreSQL-336791?logo=postgresql)](https://postgresql.org)
 
@@ -55,7 +55,7 @@ Ascension is built as a monorepo with three independently deployable services:
 ```
 apps/
 ├── mobile/    Flutter app (iOS & Android)
-├── server/    Rust / Axum REST API + WebSocket
+├── server/    Go / Gin REST API
 └── ai/        Python AI workers (MediaPipe, PyTorch, OpenCV)
 ```
 
@@ -81,7 +81,7 @@ Heavy AI workloads (pose estimation, hold detection, ghost path generation) are 
 | Layer | Technology |
 |---|---|
 | Mobile | Flutter (Dart), CustomPainter for overlays |
-| API | Rust, Axum, Tokio, JWT auth, WebSocket |
+| API | Go, Gin, pgx, JWT auth |
 | AI Workers | Python 3.10+, MediaPipe, PyTorch, OpenCV |
 | Queue | RabbitMQ 3.12+ |
 | Database | PostgreSQL 16 (JSONB for analysis results) |
@@ -95,7 +95,7 @@ Heavy AI workloads (pose estimation, hold detection, ghost path generation) are 
 
 | Repository | Description |
 |---|---|
-| [Ascension](../Ascension) | **Main Monorepo** — Core ecosystem including Flutter mobile app, Rust API, and Python AI workers. |
+| [Ascension](../Ascension) | **Main Monorepo** — Core ecosystem including Flutter mobile app, Go API, and Python AI workers. |
 | [benchmark](../benchmark) | **Performance Suite** — Technical benchmarks and stress tests for the mobile and backend stack. |
 | [.github](../.github) | **Organization Profile** — Global GitHub profile configuration. |
 
